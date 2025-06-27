@@ -242,7 +242,7 @@ const cardsData = [
     }
 ];
 
-const page = () => {
+const Page = () => {
     const [activeTag, setActiveTag] = useState('All');
 
     const tags = ['All', 'Job Search', 'Applications', 'Hiring', 'Interviews', 'Onboarding'];
@@ -333,4 +333,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page;

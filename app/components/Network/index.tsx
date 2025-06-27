@@ -327,14 +327,14 @@ const Network = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
                 >
-                    <motion.span
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2, duration: 0.6 }}
-                    >
-                        Find Jobs In India's
-                    </motion.span>
+                  <motion.span
+    initial={{ opacity: 0, x: -20 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.2, duration: 0.6 }}
+>
+    Find Jobs In India&apos;s
+</motion.span>
                     <br />
                     <motion.span
                         initial={{ opacity: 0, x: 20 }}
