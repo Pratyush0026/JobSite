@@ -7,12 +7,15 @@ import Network from './components/Network/index';
 import Clientsay from './components/Clientsay/index';
 import Newsletter from './components/Newsletter/Newsletter';
 import HallOfFame from './components/HallOfFame';
+import Inspiration from './components/Inspiration';
 
 
 export default function Home() {
   return (
     <main>
       <Banner />
+      <Inspiration/>
+
       <Companies />
       <Buyers />
       <Provide />

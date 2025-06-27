@@ -177,30 +177,30 @@ export default function HallOfFame() {
       className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-7 my-6 sm:my-10 lg:my-48 lg:relative px-4 sm:px-6 md:px-10 lg:px-20"
       data-aos="fade-up"
     >
-      {/* Left Panel - Client Showcase Card */}
-      <div 
-        className="w-full lg:w-[27%] border-2 rounded-2xl sm:rounded-3xl z-10 bg-white lg:h-[85vh] lg:absolute lg:bottom-4 p-4 sm:p-6 lg:p-8"
-        style={{ borderColor: '#144F88' }} // bluetext
-      >
-        <div className="flex justify-center lg:justify-start mb-4 lg:mb-8">
-          <img 
-            src={trophy} 
-            alt="trophy" 
-            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain" 
-          />
-        </div>
-        <h1 
-          className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold font-inter text-center lg:text-left mb-4 lg:mb-8"
-          style={{ color: '#205F9C' }} // skyblue
-        >
-          Our Client Showcase
-        </h1>
-        <p className="font-inter text-sm sm:text-base md:text-lg lg:text-base font-medium text-center lg:text-left leading-relaxed">
-          At MyCTO Innovations, our unwavering commitment to excellence and
-          innovation has propelled us to the forefront of digital
-          transformation.
-        </p>
-      </div>
+{/* Left Panel - Success Stories Card */}
+<div 
+  className="w-full lg:w-[27%] border-2 rounded-2xl sm:rounded-3xl z-10 bg-white lg:h-[85vh] lg:absolute lg:bottom-4 p-4 sm:p-6 lg:p-8"
+  style={{ borderColor: '#144F88' }} // bluetext
+>
+  <div className="flex justify-center lg:justify-start mb-4 lg:mb-8">
+    <img 
+      src={trophy} 
+      alt="trophy" 
+      className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain" 
+    />
+  </div>
+  <h1 
+    className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold font-inter text-center lg:text-left mb-4 lg:mb-8"
+    style={{ color: '#205F9C' }} // skyblue
+  >
+    Trusted by Top Companies
+  </h1>
+  <p className="font-inter text-sm sm:text-base md:text-lg lg:text-base font-medium text-center lg:text-left leading-relaxed">
+    Over 70 Lakh+ candidates across India trust our platform for their career growth. 
+    Join 1000+ leading companies who have successfully hired quality talent through 
+    our verified candidate network and advanced hiring tools.
+  </p>
+</div>
 
       {/* Desktop Slider - Hidden on mobile/tablet */}
       <div 

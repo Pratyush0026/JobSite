@@ -56,7 +56,6 @@
 
 // export default Buyers;
 
-
 "use client"
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
@@ -71,27 +70,27 @@ interface cardDataType {
 const cardData: cardDataType[] = [
     {
         imgSrc: '/assets/buyers/ourbuyers.svg',
-        percent: '80k',
-        heading: "Our buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '70L+',
+        heading: "Active Candidates",
+        subheading: "Trusted candidates across India actively seeking opportunities.",
     },
     {
         imgSrc: '/assets/buyers/projectcompleted.svg',
-        percent: '90k',
-        heading: "Project completed",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '5L+',
+        heading: "Job Vacancies",
+        subheading: "Fresh job openings posted daily across all industries.",
     },
     {
         imgSrc: '/assets/buyers/happybuyers.svg',
-        percent: '80%',
-        heading: "Happy buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '95%',
+        heading: "Success Rate",
+        subheading: "Candidates who find suitable jobs through our platform.",
     },
     {
         imgSrc: '/assets/buyers/teammembers.svg',
-        percent: '50+',
-        heading: "Team members",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '1000+',
+        heading: "Top Companies",
+        subheading: "Leading employers hiring through our trusted platform.",
     }
 ]
 
