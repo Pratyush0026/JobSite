@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from "react";
 
-// Images are referenced as public URLs since they're in the public folder
 const trophy = "/assets/halloffame/trophy.png";
 const kk = "/assets/halloffame/kk 1.png";
 const ll = "/assets/halloffame/ll 1.png";
@@ -17,20 +16,20 @@ const itemsFirst = [
   {
     img: kk,
     alt: "KK",
-    bgColor: "#a7f3d0", // emerald-200
-    borderColor: "#6ee7b7", // emerald-300
+    bgColor: "#a7f3d0",
+    borderColor: "#6ee7b7",
   },
   {
     img: sesi,
     alt: "Sesi",
-    bgColor: "#fef08a", // yellow-200
-    borderColor: "#fde047", // yellow-300
+    bgColor: "#fef08a",
+    borderColor: "#fde047",
   },
   {
     img: ll,
     alt: "Learn Linkage",
-    bgColor: "#bbf7d0", // green-200
-    borderColor: "#86efac", // green-300
+    bgColor: "#bbf7d0",
+    borderColor: "#86efac",
   },
 ];
 
@@ -38,20 +37,20 @@ const itemsSecond = [
   {
     img: sm,
     alt: "Sm",
-    bgColor: "#1c1917", // stone-900
-    borderColor: "#57534e", // stone-600
+    bgColor: "#1c1917",
+    borderColor: "#57534e",
   },
   {
     img: startup,
     alt: "Startup Lawyers",
-    bgColor: "#fbcfe8", // pink-200
-    borderColor: "#f9a8d4", // pink-300
+    bgColor: "#fbcfe8",
+    borderColor: "#f9a8d4",
   },
   {
     img: tagic,
     alt: "Tagic Insure",
-    bgColor: "#dbeafe", // blue-200
-    borderColor: "#93c5fd", // blue-300
+    bgColor: "#dbeafe",
+    borderColor: "#93c5fd",
   },
 ];
 
@@ -59,27 +58,22 @@ const itemsThird = [
   {
     img: utk,
     alt: "Uttkarast Vihaan",
-    bgColor: "#e4e4e7", // zinc-200
-    borderColor: "#d4d4d8", // zinc-300
+    bgColor: "#e4e4e7",
+    borderColor: "#d4d4d8",
   },
   {
     img: ww,
     alt: "Wealth Grow",
-    bgColor: "#fecdd3", // rose-200
-    borderColor: "#fda4af", // rose-300
+    bgColor: "#fecdd3",
+    borderColor: "#fda4af",
   },
 ];
 
-const smallItems = [
-  ...itemsFirst,
-  ...itemsSecond,
-  ...itemsThird,
-];
+const smallItems = [...itemsFirst, ...itemsSecond, ...itemsThird];
 
 const SliderColumn = ({ animation, items }) => {
   useEffect(() => {
-    // Inject CSS animations into the document head
-    const styleElement = document.createElement('style');
+    const styleElement = document.createElement("style");
     styleElement.textContent = `
       @keyframes hallOfFameMoveUp {
         0% { transform: translateY(0%); }
@@ -103,12 +97,11 @@ const SliderColumn = ({ animation, items }) => {
     };
   }, []);
 
-  const animationClass = animation === 'moveUp' ? 'hall-of-fame-move-up' : 'hall-of-fame-move-down';
+  const animationClass =
+    animation === "moveUp" ? "hall-of-fame-move-up" : "hall-of-fame-move-down";
 
   return (
-    <div 
-      className={`${animationClass} flex flex-col w-1/3 h-[80vh]`}
-    >
+    <div className={`${animationClass} flex flex-col w-1/3 h-[80vh]`}>
       {items.concat(items).map((item, index) => (
         <div
           key={index}
@@ -177,35 +170,36 @@ export default function HallOfFame() {
       className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-7 my-6 sm:my-10 lg:my-48 lg:relative px-4 sm:px-6 md:px-10 lg:px-20"
       data-aos="fade-up"
     >
-{/* Left Panel - Success Stories Card */}
-<div 
-  className="w-full lg:w-[27%] border-2 rounded-2xl sm:rounded-3xl z-10 bg-white lg:h-[85vh] lg:absolute lg:bottom-4 p-4 sm:p-6 lg:p-8"
-  style={{ borderColor: '#144F88' }} // bluetext
->
-  <div className="flex justify-center lg:justify-start mb-4 lg:mb-8">
-    <img 
-      src={trophy} 
-      alt="trophy" 
-      className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain" 
-    />
-  </div>
-  <h1 
-    className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold font-inter text-center lg:text-left mb-4 lg:mb-8"
-    style={{ color: '#205F9C' }} // skyblue
-  >
-    Trusted by Top Companies
-  </h1>
-  <p className="font-inter text-sm sm:text-base md:text-lg lg:text-base font-medium text-center lg:text-left leading-relaxed">
-    Over 70 Lakh+ candidates across India trust our platform for their career growth. 
-    Join 1000+ leading companies who have successfully hired quality talent through 
-    our verified candidate network and advanced hiring tools.
-  </p>
-</div>
+      {/* Left Panel - Success Stories Card */}
+      <div
+        className="w-full lg:w-[27%] border-2 rounded-2xl sm:rounded-3xl z-10 bg-white lg:h-[85vh] lg:absolute lg:bottom-4 p-4 sm:p-6 lg:p-8"
+        style={{ borderColor: "#144F88" }}
+      >
+        <div className="flex justify-center lg:justify-start mb-4 lg:mb-8">
+          <img
+            src={trophy}
+            alt="trophy"
+            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-auto lg:h-auto object-contain"
+          />
+        </div>
+        <h1
+          className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold font-inter text-center lg:text-left mb-4 lg:mb-8"
+          style={{ color: "#205F9C" }}
+        >
+          Trusted by Top Companies
+        </h1>
+        <p className="font-inter text-sm sm:text-base md:text-lg lg:text-base font-medium text-center lg:text-left leading-relaxed">
+          Over 70 Lakh+ candidates across India trust our platform for their
+          career growth. Join 1000+ leading companies who have successfully
+          hired quality talent through our verified candidate network and
+          advanced hiring tools.
+        </p>
+      </div>
 
       {/* Desktop Slider - Hidden on mobile/tablet */}
-      <div 
+      <div
         className="hidden lg:flex lg:w-3/4 overflow-hidden border-2 rounded-3xl ml-auto h-[60vh] lg:h-[80vh]"
-        style={{ borderColor: '#144F88' }} // bluetext
+        style={{ borderColor: "#144F88" }}
       >
         <SliderColumn animation="moveUp" items={itemsFirst} />
         <SliderColumn animation="moveDown" items={itemsSecond} />
@@ -213,9 +207,9 @@ export default function HallOfFame() {
       </div>
 
       {/* Mobile/Tablet Slider - Hidden on desktop */}
-      <div 
+      <div
         className="lg:hidden flex flex-col w-full py-3 sm:py-4 overflow-hidden border-2 rounded-2xl sm:rounded-3xl"
-        style={{ borderColor: '#144F88' }} // bluetext
+        style={{ borderColor: "#144F88" }} // bluetext
       >
         <SmallScreenSlider items={smallItems} />
       </div>

@@ -31,17 +31,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-       <Disclosure 
-  as="nav" 
-  className="fixed top-0 left-0 right-0 z-50" 
-  style={{ 
-    background: 'rgba(255, 255, 255, 0.15)',
-    backdropFilter: 'blur(15px)',
-    WebkitBackdropFilter: 'blur(15px)',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)'
-  }}
->
+        <Disclosure as="nav" className="navbar" style={{ zIndex: 50 }}>
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
                     <div className="relative flex h-14 items-center justify-between">
@@ -56,7 +46,7 @@ const Navbar = () => {
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden h-full w-full lg:block"
+                                    className="hidden h-full w-40 lg:block"
                                     src={'/assets/logo/logo.png'}
                                     alt="dsign-logo"
                                 />

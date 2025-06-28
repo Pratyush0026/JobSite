@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-// IMAGES DATA FOR CAROUSEL
 interface Data {
     imgSrc: string;
     name: string;
@@ -44,7 +43,6 @@ const data: Data[] = [
     }
 ]
 
-// Enhanced Custom CSS for continuous movement
 const carouselStyles = `
   .continuous-slider .slick-track {
     display: flex !important;
@@ -104,7 +102,6 @@ const carouselStyles = `
   }
 `;
 
-// CAROUSEL SETTINGS
 export default class MultipleItems extends Component {
     
     componentDidMount() {
@@ -202,7 +199,6 @@ export default class MultipleItems extends Component {
                         </p>
                     </div>
 
-                    {/* Enhanced Carousel Container */}
                     <div className="carousel-container">
                         <div className="carousel-wrapper">
                             <Slider {...settings} className="continuous-slider">
