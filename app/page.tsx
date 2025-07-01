@@ -8,17 +8,24 @@ import Clientsay from './components/Clientsay/index';
 import Newsletter from './components/Newsletter/Newsletter';
 import HallOfFame from './components/HallOfFame';
 import Inspiration from './components/Inspiration';
+import {Hero} from './components/Hero';
+import PremiumCarousel from './components/PremiumCarousel';
 
 
 export default function Home() {
   return (
     <main>
+      <Hero/>
+
       <Banner />
+      <PremiumCarousel/>
+
       <Inspiration/>
 
       <Companies />
       <Buyers />
       <Provide />
+
       <Why />
       <HallOfFame/>
 
