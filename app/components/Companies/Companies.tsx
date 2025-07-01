@@ -637,16 +637,16 @@ export default class MultipleItems extends Component {
                             </span>
                         </motion.h2>
                         
-                        <motion.p 
-                            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.4 }}
-                            viewport={{ once: true }}
-                        >
-                            Join millions of professionals who've accelerated their careers with our platform. 
-                            From startups to Fortune 500 companies, top employers choose us for talent.
-                        </motion.p>
+                       <motion.p 
+    className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.4 }}
+    viewport={{ once: true }}
+>
+    Join millions of professionals who&apos;ve accelerated their careers with our platform. 
+    From startups to Fortune 500 companies, top employers choose us for talent.
+</motion.p>
                     </motion.div>
 
                     {/* Enhanced Carousel */}
