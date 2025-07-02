@@ -846,7 +846,7 @@ const Banner = () => {
     return (
         <main>
             <motion.div 
-                className="relative px-6 lg:px-8  overflow-hidden"
+                className="relative px-6 lg:px-8 pt-4 overflow-hidden"
                 style={{
                     backgroundImage,
                 }}
